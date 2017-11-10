@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH << '.'
+
+puts "Running from #{$PROGRAM_NAME}"
+
+require 'bundler/setup'
+Bundler.setup
+
+require 'puma'
+require 'puma/configuration'
+require 'puma/launcher'
+require 'rack'
+
+conf = Puma::Configuration.new
+Puma::Launcher.new(conf, argv: ARGV).run
