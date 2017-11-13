@@ -2,6 +2,7 @@
 
 - Works correctly on JRuby <9.1.14.0 with `bundler 1.15.4` (`jruby 9.1.14.0` has bundler 1.16.0 built-in.)
 - Works correctly on MRI with all versions of bundler.
+- Reported to JRuby, and confirmed as a bug there, fixed in latest `master`: https://github.com/jruby/jruby/issues/4849
 
 ## How to test
 
